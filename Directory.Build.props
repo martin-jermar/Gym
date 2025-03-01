@@ -4,5 +4,11 @@
     </ItemGroup>
     <PropertyGroup>
         <LangVersion>latest</LangVersion>
+        <!-- Nastavení varování jako chyby pro všechny projekty -->
+        <WarningsAsErrors>$(WarningsAsErrors);SA*,CS</WarningsAsErrors>
+        <GenerateDocumentationFile>false</GenerateDocumentationFile>
+<!--        <EnableNETAnalyzers>true</EnableNETAnalyzers>-->
+<!--        <AnalysisLevel>latest-all</AnalysisLevel>-->
+<!--        <NoWarn>CA1812</NoWarn>-->
     </PropertyGroup>
 </Project>

@@ -8,7 +8,8 @@ if ($LASTEXITCODE -ne 0) {
 }
 
 # Spustí dotnet build
-dotnet build --no-restore
+dotnet clean
+dotnet build --no-restore --warnaserror
 
 # Pokud build selže, přeruší commit
 if ($LASTEXITCODE -ne 0) {
