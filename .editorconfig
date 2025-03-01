@@ -1,0 +1,52 @@
+root = true
+
+
+# Nastavení StyleCopAnalyzers
+[*.cs]
+# Vypne analýzu XML komentářů
+dotnet_diagnostic.SA0001.severity = none
+
+# Vypne vyžadování dokumentace pro všechny členy
+dotnet_diagnostic.SA1600.severity = none
+
+# Vypne vyžadování dokumentace pro parciální členy
+dotnet_diagnostic.SA1601.severity = none
+
+# Vypne vyžadování hlavičky souboru
+dotnet_diagnostic.SA1633.severity = none
+
+# Remove unnecessary usings - odstraní až dotnet format
+dotnet_diagnostic.IDE0005.severity = warning
+
+
+
+
+# Vypne požadavek na XML komentáře (což SA0001 řeší)
+# dotnet_diagnostic.CS1591.severity = none
+
+
+# dotnet_diagnostic.SA0003.severity = warning
+# 
+# # Povinné XML dokumentační komentáře pro veřejné členy
+# dotnet_diagnostic.SA1600.severity = warning
+# 
+# # Povinné XML komentáře pro parametry
+# dotnet_diagnostic.SA1611.severity = warning
+# 
+# # Povinné XML komentáře pro návratové hodnoty
+# dotnet_diagnostic.SA1615.severity = warning
+# 
+# # Povinný XML dokument pro veřejné konstruktory
+# dotnet_diagnostic.SA1642.severity = warning
+# 
+# # Nastavení formátování
+# csharp_space_between_method_call_name_and_opening_parenthesis = false
+# csharp_prefer_braces = true
+# 
+# # Použití implicitních typů
+# csharp_style_var_for_built_in_types = true:suggestion
+# csharp_style_var_when_type_is_apparent = true:suggestion
+# csharp_style_var_elsewhere = false:suggestion
+# 
+# # Povolení generování XML dokumentace (musí být zapnuté i v .csproj!)
+# dotnet_generate_documentation_file = true
